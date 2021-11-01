@@ -35,8 +35,8 @@ async def _human_time_duration(seconds):
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
 	insert(int(message.chat.id))
-	await message.reply_text("Hey {} I am a Pdisk Uploader Bot\nJust Send me a link to get started\n✪ Support Custom Thumbnail
-✪ Support Custom Title Name\nUse help Command to know how to use me\nMade with @Tellybots_4u",reply_to_message_id = message.message_id,reply_markup=InlineKeyboardMarkup([ [ InlineKeyboardButton("📡 Updates Channel" ,url="https://t.me/tellybots_4u") ], [InlineKeyboardButton("💬 Support Group", url="https://t.me/tellybots_support") ]  ]  ) 
+	await message.reply_text("Hey I am a Pdisk Uploader Bot \nJust Send me a link to get started\n ✪ Support Custom Thumbnail
+✪ Support Custom Title Name\nUse help Command to know how to use me \nMade with @Tellybots_4u",reply_to_message_id = message.message_id,reply_markup=InlineKeyboardMarkup([ [ InlineKeyboardButton("📡 Updates Channel" ,url="https://t.me/tellybots_4u") ], [InlineKeyboardButton("💬 Support Group", url="https://t.me/tellybots_support") ]  ]  ) 
         )
 	
 @Client.on_message(filters.command("ping"))
